@@ -104,10 +104,9 @@ fun NoteScreen(
         Divider(modifier = Modifier.padding(10.dp))
         LazyColumn {
             items(notes) { note ->
-                NoteRow(note = note
-                ) {
-                    onRemoveNote(note)
-                }
+                NoteRow(note = note,
+                    onNoteClick = { onRemoveNote(note) }
+                )
 
             }
         }
@@ -130,9 +129,7 @@ fun NoteRow(
     ) {
         Column(
             modifier
-                .clickable {
-                    onNoteClick(note)
-                }
+                .clickable { onNoteClick(note) }
                 .padding(
                     horizontal = 14.dp,
                     vertical = 6.dp
