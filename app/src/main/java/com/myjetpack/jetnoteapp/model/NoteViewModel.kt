@@ -8,6 +8,7 @@ class NoteViewModel : ViewModel() {
    private var noteList = mutableStateListOf<Note>()
 
     init {
+        //Initial data
         noteList.addAll(NotesDataSource().loadNotes())
     }
     fun addNote(note: Note){

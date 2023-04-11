@@ -15,7 +15,9 @@ import com.myjetpack.jetnoteapp.model.Note
 import com.myjetpack.jetnoteapp.model.NoteViewModel
 import com.myjetpack.jetnoteapp.screens.NoteScreen
 import com.myjetpack.jetnoteapp.ui.theme.JetNoteAppTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint//For Hilt dependency
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

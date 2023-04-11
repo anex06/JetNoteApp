@@ -49,7 +49,8 @@ enabled: Boolean=true){
     Button(onClick = { onClick.invoke()},
     shape = CircleShape,
     enabled = enabled,
-    modifier = modifier) {//we can write onclick=onClick also or we can use it by .invoke function
+    modifier = modifier) {
+        //we can write onclick=onClick also or we can use it by .invoke function
         Text(text)
     }
 }
